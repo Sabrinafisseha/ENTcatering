@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Silver Slice Bakery</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href='https://fonts.googleapis.com/css?family=Kanit'>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css'>
+<style>
+body, html {
+  height: 100%;
+}
+body,h1,h2,h3,h4,h5,h6 {font-family: "Kanit", sans-serif}
+.menu {display: none}
+.bgimg {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("/w3images/pizza.jpg");
+  min-height: 90%;
+}
+</style>
+</head>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top w3-hide-small">
+  <div class="w3-bar w3-xlarge w3-black w3-opacity w3-hover-opacity-off" id="myNavbar">
+    <a href="#" class="w3-bar-item w3-button">HOME</a>
+    <a href="#menu" class="w3-bar-item w3-button">MENU</a>
+    <a href="#about" class="w3-bar-item w3-button">ABOUT</a>
+    <a href="#myMap" class="w3-bar-item w3-button">CONTACT US</a>
+    <a href="#reviewsContact" class="w3-bar-item w3-button">REVIEWS</a>
+  </div>
+</div>
+  
+<!-- Header image -->
+<div style="height:800px;background-image:url('pizzabackground.jpeg');background-size:cover" class="w3-display-container w3-grayscale-min">
+<div class="w3-display-bottomleft">
+<span class="w3-tag w3-xlarge">Open from 3pm to 10pm</span>
+</div>
+<div class="w3-display-middle w3-center">
+<span class="w3-text-black" style="font-size:100px; -webkit-text-stroke-color: white; -webkit-text-stroke-width: 1px"><em>Silver Slice<br>Bakery</em></span>
+<p><a href="#menu" class="w3-button w3-xxlarge w3-black" >Let me see the menu</a></p>
+</div>
+</div>
+
+<!-- Menu Container -->
+<div class="w3-container w3-black w3-padding-64 w3-xxlarge" id="menu">
+  <div class="w3-content">
+  
+    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">THE MENU</h1>
+    <div class="w3-row w3-center w3-border w3-border-dark-grey">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Pizza');" id="myLink">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Pizza</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Pastries');">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red" >Pastries</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Starter');">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Wholesale</div>
+      </a>
+    </div>
+
+    <div id="Pizza" class="w3-container menu w3-padding-32 w3-white">
+      <h1><b>Gluten Free Pizza KIT</b> <span class="w3-tag w3-red w3-round">Hot!</span><span class="w3-right w3-tag w3-dark-grey w3-round">$18.00</span></h1>
+      <p class="w3-text-grey">Fresh tomatoes, fresh mozzarella, fresh basil</p>
+      <hr>
+   
+      <h1><b>Type of Pizza</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$15.50</span></h1>
+      <p class="w3-text-grey">Four cheeses (mozzarella, parmesan, pecorino, jarlsberg)</p>
+      <hr>
+      
+      <h1><b>Type of Pizza</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$17.00</span></h1>
+      <p class="w3-text-grey">Fresh tomatoes, mozzarella, chicken, onions</p>
+      <hr>
+
+      <h1><b>Type of Pizza</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$16.50</span></h1>
+      <p class="w3-text-grey">Fresh tomatoes, mozzarella, fresh pineapple, bacon, fresh basil</p>
+      <hr>
+
+      <h1><b>Type of Pizza</b> <span class="w3-tag w3-red w3-round">Hot!</span><span class="w3-right w3-tag w3-dark-grey w3-round">$20.00</span></h1>
+      <p class="w3-text-grey">Fresh tomatoes, mozzarella, hot pepporoni, hot sausage, beef, chicken</p>
+      <hr>
+
+      <h1><b>Type of Pizza</b> <span class="w3-tag w3-grey w3-round">New</span><span class="w3-right w3-tag w3-dark-grey w3-round">$21.50</span></h1>
+      <p class="w3-text-grey">Fresh tomatoes, mozzarella, parma, bacon, fresh arugula</p>
+    </div>
+
+    <div id="Pastries" class="w3-container menu w3-padding-32 w3-white">
+      <h1><b>Pastry</b> <span class="w3-tag w3-grey w3-round">Popular</span> <span class="w3-right w3-tag w3-dark-grey w3-round">$13.50</span></h1>
+      <p class="w3-text-grey">Special sauce, mozzarella, parmesan, ground beef</p>
+      <hr>
+   
+      <h1><b>Pastry</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$14.50</span></h1>
+      <p class="w3-text-grey">Ravioli filled with cheese</p>
+      <hr>
+      
+      <h1><b>Pastry</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$11.00</span></h1>
+      <p class="w3-text-grey">Fresh tomatoes, onions, ground beef</p>
+      <hr>
+
+      <h1><b>Pastry</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$25.50</span></h1>
+      <p class="w3-text-grey">Salmon, shrimp, lobster, garlic</p>
+    </div>
+
+
+    <div id="Starter" class="w3-container menu w3-padding-32 w3-white">
+      <h1><b>Today's Soup</b> <span class="w3-tag w3-grey w3-round">Seasonal</span><span class="w3-right w3-tag w3-dark-grey w3-round">$5.50</span></h1>
+      <p class="w3-text-grey">Ask the waiter</p>
+      <hr>
+   
+      <h1><b>Bruschetta</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$8.50</span></h1>
+      <p class="w3-text-grey">Bread with pesto, tomatoes, onion, garlic</p>
+      <hr>
+      
+      <h1><b>Garlic bread</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$9.50</span></h1>
+      <p class="w3-text-grey">Grilled ciabatta, garlic butter, onions</p>
+      <hr>
+      
+      <h1><b>Tomozzarella</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$10.50</span></h1>
+      <p class="w3-text-grey">Tomatoes and mozzarella</p>
+    </div><br>
+
+  </div>
+</div>
+
+<!-- About Container -->
+<div class="w3-container w3-padding-64 w3-xlarge" id="about" style= "background-color: #b09e75; margin: 0">
+  <div class="w3-content">
+    <h1 class="w3-center w3-jumbo " style="margin-bottom:64px">About</h1>
+    <p>		<b>My bakery<b/> has been developing ‘look-a-like’ gluten-free products since 2009. Since the pandemic, the
+company has been developing and wholesaling gluten-free and plant-based foods with a focus on pizzas.
+The company wants to satisfy the growing demand during uncertain times by wanting to increase
+affordable healthy food to low income communities locally, regionally and nationally. With the growth plan
+the company will be able to create jobs. Having a resilient food brand is the solution in order to to move
+through uncertain times with confidence and predictability.
+The company wants to commit to the future, rethink risk and embrace collaboration that can help my small
+company fight above weight class, embraced new technologies and unlock growth. My company has been
+pivoting through the changing COVID19 safety rules, mask requirements and vaccine mandates, supply
+chain delays, rising inflation, a labor shortage and other challenges as it clawed its way to recovery.</p>
+    <p><h1><strong><b>The Chef and Ceo</b></strong> Tonyia Smith<img src="tonyiasmith.jpg" style="width:300px"  class="w3-circle w3-right" alt="ChefCEO"></h1></p>
+    <!--<p>Silver Slice Bakery.</p>-->
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/QTg8qRWXM6M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <h1><b>Online Business Hours</b></h1>
+    
+    <div class="w3-row">
+      <div class="w3-col s6">
+        <p>Mon & Tue CLOSED</p>
+        <p>Wednesday 3.00pm - 10.00pm</p>
+        <p>Thursday 3:00pm - 10:00pm</p>
+      </div>
+      <div class="w3-col s5">
+        <p>Friday 3:00pm - 10:00pm</p>
+        <p>Saturday 3:00pm - 10:00pm</p>
+        <p>Sunday Closed</p>
+      </div>
+    </div>
+    
+  </div>
+</div>
+
+<!-- Image of location/map -->
+<!--<img src="" class="w3-image w3-greyscale" style="width:100%;" id="myMap">-->
+
+<!-- Order -->
+<div class="w3-container w3-padding-64 w3-blue-grey w3-grayscale-min w3-xlarge"style= "background-color: #336124;>
+  <div class="w3-content">
+    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">CONTACT US</h1>
+  
+    <p><span class="w3-tag">FYI!</span> We offer full-service catering for any event, large or small. We understand your needs and we will cater the food to satisfy the biggerst criteria of them all, both look and taste.</p>
+    <form action="https://formsubmit.co/lumi1kg@gmail.com" method="POST">
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required name="Name" required></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="email" placeholder="Your Email" name="email" required></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="number" placeholder="Your Order" required name="Order" required></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="datetime-local" placeholder="Date and time" required name="date" value="2020-11-16T20:00" required></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Message \ Special requirements" name="Message" ></p>
+      <p><button class="w3-button w3-light-grey w3-block" type="submit">SEND MESSAGE</button></p>
+    </form>
+  </div>
+</div>
+
+
+<!--Reviews/Contact-->
+<div class="w3-container w3-padding-64 w3-xlarge" id="reviewsContact" style= "background-color: #b09e75; margin: 0">
+  <div class="w3-content">
+    <h1 class="w3-center w3-jumbo " style="margin-bottom:64px">Reviews</h1>
+
+<!--    
+	<p><b> I Found My Life's purpose <b/> by accident 2008-2009, when I enrolled in Seattle Culinary Academy at Seattle Central C.C. I was working as a mortgage loan officer and was talking folks out of subprime loans, thus I was not making any money😩. I told my mother my woes and she suggested I take a course at a community college to “try and find yourself” is what she retorted🤣😂. I fell in love with bread baking. While in culinary school, I expanded my culinary knowledge and gained catering experience at Ray’s Boathouse and Catering and Mt Meadows Catering( Microsoft, AlaskaAir, Boeing & Expedia preferred caterer). Before graduating the pastry program, the students had to complete a gluten-free nutritional project. After graduating I continued to recipe test which include various use of alternative flour blends that most bakers use, white rice, tapioca starch, potato starch, brown rice and so forth. At the time I just wanted to create a decent bread folks could eat. After giving out samples to my mom’s gluten-free co-workers I received an unbelievable amount of requests. Can you make cinnamon rolls, cookies, muffins? and the request from my aunt’s co-workers, their friends and their friends and more referrals kept coming in. I remember a lady yelling at me on the phone “ Do you realize what you’ve done!” So I started a business to fulfill a need. I did not want to be view as a “me too” bakery that was associated with the negative connotations from gluten-free foods. The foods I created were “Special”  and I did not want to only appeal to the 7% of folks that have Celiac Disease or folks with a gluten- intolerance but sell to the 29% of folks that bought gluten-free for other reasons. I wanted to create products that  my competitors were not manufacturing not available in  the market such as European and French style pastries, breads and desserts such as croissants, baguettes and puff pastry. 
+My entrepreneurial journey begin at Ventures Nonprofit, an 8-week business development training course which led to opening a retail Store at Pike Place Market (2012-2015) more retails store in Burien and Seattle. All retail stores are closed and I focused on wholesaling to expand my products reach.  I’ve participated in Seattle University’s Entrepreneurial Clinic, several business consulting programs at University of Washington Foster School of Business and  mentors & training at Seattle SCORE and Thurston County SBDC. 
+I realized very quickly that success is always under construction so I continue to participate in online webinars, workshops, special events and have built allegiance with various organizations such as Seattle Good Business Network, Elevate D.I.D., Seattle Urban League, Business Impact NW, PTAC, Impact Washington and Ezell’s R.U.B.B. Black Initiative Community.
+I’ve wholesaled sandwiches to Centerplate, concessionaires to Seattle Mariners and continue to service Seattle Hyatt Hotels and restaurants with gluten-free pastries and frozen, par-baked wood fire pizza crusts. Making pizza crusts has led me to a co-branding deal with Hormel Foods. I plan to market frozen gluten-free and spinach plant-based pizzas using Hormel’s Happy Little Plants plant-based pepperoni, Italian sausage crumbles and chorizo toppings. 
+Courtesy of the Hyatt Seattle Regency Hotel I was a guest chef for “Amazon Shine” a two day event highlighting over 400 black women executives. I am a retailer on Amazon thanks to the Black Accelerator Program. I’ve been featured in numerous online blogs and food recommended platforms such as Yelp and winning a Certificate of Excellence 2014 from TripAdvisor plus articles from local news and magazines such as KOMO News, CNN Money Blog and Seattle Met.
+I think that is all for now.</p>
+-->
+<div class="w3-container w3-padding-64 w3-blue-grey w3-grayscale-min w3-xlarge">
+  <div class="w3-content">
+<p><strong>Contact the Chef and Ceo</strong> Tonyia Smith<img src="tonyiasmith2.jpg" style="width:375px" class="w3-circle w3-right" alt="ChefCEO"></p>
+	  <p>Leave a text/call us at 206-802-8666</p>
+ </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-48 w3-xxlarge">
+<pre><p><a href="#" class="tooltip">Facebook</a> |<a href="#" class="tooltip">Twitter</a> |<a href="#" class="tooltip">Instagram</a> |<a href="#" class="tooltip">Youtube</a></p></pre>
+ <pre><p>Template by <a href="https://www.w3schools.com/w3css/default.asp" title="w3.csstarget="_blank" class="w3-hover-text-green">w3.css</a> |Designed by LumiG</p></pre>
+</footer>
+
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+     tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-red";
+}
+document.getElementById("myLink").click();
+</script>
+
+</body>
+</html>
